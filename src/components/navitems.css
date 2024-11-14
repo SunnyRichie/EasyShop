@@ -1,0 +1,194 @@
+.cate-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+.logo{
+  width: 215px;
+}
+
+
+/* Category Dropdown */
+.cate-dropdown {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+  background-color: #f6f9fc;
+  padding: 0px 30px;
+  border-radius: 5px;
+  height: 6vh;
+  
+}
+
+.cate-dropdown span {
+  margin-right: 10px;
+  font-size: 19px;
+}
+
+.cate-dropdown h4 {
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+.cate-dropdown h4 i {
+  margin-left: 7px;
+}
+
+/* Search Div */
+.search-div {
+  width: 70%;
+}
+
+.search-div form {
+  display: flex;
+  width: 90%;
+  position: relative;
+}
+
+.search-div input {
+  flex: 1;
+  padding: 15px 0;
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+  background: transparent;
+  margin-left: 40px;
+  border-radius: 50px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+.search-div button {
+  padding: 5px 10px;
+  background: transparent;
+  color: #413e3e;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  width: 60px;
+  top: 9px;
+}
+
+.search-div button i {
+  font-size: 20px;
+  width: 5%;
+  text-align: center;
+  opacity: 0.5;
+}
+
+/* Placeholder Style */
+::placeholder {
+  font-size: 15px;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.cate-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .contentWidth {
+    width: 100%;
+  }
+  
+  .cate-dropdown {
+    display: none;
+  }
+
+  .category1 {
+    display: none;
+  }
+
+  .search-div {
+    width: 100%; /* Set the search bar container to full width */
+    margin: 0; /* Remove any margin for full-width alignment */
+    padding: 10px; /* Add padding to ensure comfortable spacing */
+  }
+
+  .search-div input {
+    width: 100%; /* Make input field take full width */
+    padding: 12px;
+    border-radius: 30px;
+    box-sizing: border-box; /* Prevent padding from affecting full width */
+  }
+}
+
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+  .cate-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .cate-dropdown {
+  display: none;
+  }
+
+  .search-div {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .search-div form {
+    width: 100%;
+  }
+
+  .search-div input {
+    width: 100%;
+    padding: 12px;
+    margin-left: 0;
+    border-radius: 30px;
+  }
+
+  .search-div button {
+    width: 40px;
+    top: 8px;
+    right: 10px;
+  }
+
+  .search-div button i {
+    font-size: 18px;
+  }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+  .cate-container {
+    padding: 10px;
+
+  }
+
+  .cate-dropdown {
+   display: none;
+  }
+
+
+  .search-div input {
+    padding: 10px;
+    margin: 0 20px 20px 30px;
+  }
+
+  .search-div button {
+    width: 35px;
+    top: 8px;
+    right: 28px;
+  }
+
+  .search-div button i {
+    font-size: 16px;
+  }
+}
